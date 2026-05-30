@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приложение В — Пояснительная записка</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ═══ ЛЕВОЕ МЕНЮ ═══ -->
+    <div class="sidebar">
+        <nav class="toc-menu">
+            <ol>
+<li><a href="index.html">ТИТУЛЬНЫЙ ЛИСТ</a></li><li><a href="terms.html">ТЕРМИНЫ И ОПРЕДЕЛЕНИЯ</a></li><li><a href="abbreviations.html">ПЕРЕЧЕНЬ СОКРАЩЕНИЙ</a></li><li><a href="introduction.html">ВВЕДЕНИЕ</a></li><li><span class="toc-section-header">1 ПРОЕКТНАЯ ЧАСТЬ</span><ol class="sub-list"><li><a href="project.html#s1">1.1 Архитектура сети</a></li><li><a href="project.html#s2">1.2 Активное оборудование</a></li><li><a href="project.html#s3">1.3 Пассивное оборудование</a></li><li><a href="project.html#s4">1.4 Маркировка</a></li><li><a href="project.html#s5">1.5 Кабельный журнал</a></li><li><a href="project.html#s6">1.6 Схемы сети L1, L2, L3</a></li><li><a href="project.html#s7">1.7 Фасад ТКШ</a></li><li><a href="project.html#s8">1.8 Планы зданий</a></li></ol></li><li><span class="toc-section-header">2 ЭКСПЛУАТАЦИОННАЯ ЧАСТЬ</span><ol class="sub-list"><li><a href="operation.html#e1">2.1 Таблица VLAN</a></li><li><a href="operation.html#e2">2.2 IP-адресация</a></li><li><a href="operation.html#e3">2.3 Назначение портов</a></li><li><a href="operation.html#e4">2.4 Конфигурация оборудования</a></li><li><a href="operation.html#e5">2.5 Настройка сервисов</a></li><li><a href="operation.html#e6">2.6 Команды проверки</a></li></ol></li><li><span class="toc-section-header">3 ЭКОНОМИЧЕСКАЯ ЧАСТЬ</span><ol class="sub-list"><li><a href="economy.html#e1">3.1 Сравнение поставщиков</a></li><li><a href="economy.html#e2">3.2 Выбор поставщиков</a></li><li><a href="economy.html#e3">3.3 Норма расхода</a></li><li><a href="economy.html#e4">3.4 Смета затрат</a></li><li><a href="economy.html#e5">3.5 Трудозатраты</a></li><li><a href="economy.html#e6">3.6 Итоговая смета</a></li><li><a href="economy.html#e7">3.7 Выводы</a></li></ol></li><li><span class="toc-section-header">4 ТЕХНОЛОГИИ ВЕБ</span><ol class="sub-list"><li><a href="technology.html#t1">4.1 Подготовительный этап</a></li><li><a href="technology.html#t2">4.2 Дизайн и цветовая схема</a></li><li><a href="technology.html#t3">4.3 Вёрстка сайта</a></li><li><a href="technology.html#t4">4.4 Структура файлов</a></li><li><a href="technology.html#t5">4.5 Публикация</a></li></ol></li><li><a href="conclusion.html">ЗАКЛЮЧЕНИЕ</a></li><li><a href="list.html">СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ</a></li><li><a href="application.html">ПРИЛОЖЕНИЯ</a></li><li><span class="toc-section-header">ПРИЛОЖЕНИЯ</span><ol class="sub-list"><li><a href="application1.html">Приложение А — Физ. схема сайта</a></li><li><a href="application2.html">Приложение Б — Цветовая схема</a></li><li><a href="application3.html" class="active">Приложение В — Кабельный журнал</a></li></ol></li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- ═══ ПРАВАЯ КОЛОНКА ═══ -->
+    <div class="main-content">
+
+        <!-- Шапка -->
+        <header class="site-header">
+            <div class="logo-container">
+                <img src="../картинки/лого.jpg" alt="Логотип" class="logo-img">
+            </div>
+            <div class="header-text">
+                <div class="header-college">ГБПОУ «Пермский политехнический колледж имени Н.Г. Славянова»</div>
+                <div class="header-pz-label">Пояснительная записка</div>
+                <div class="header-theme">ПРОЕКТИРОВАНИЕ УНИВЕРСАЛЬНОЙ СКС ДЛЯ ФИЛИАЛА ОФИСНОЙ ОРГАНИЗАЦИИ</div>
+            </div>
+        </header>
+
+        <!-- Контент -->
+        <div class="content-center">
+
+<div class="text-content">
+<div class="app-page-header">
+    <div class="app-label-right">Приложение В</div>
+    <div class="app-name-center">КАБЕЛЬНЫЙ ЖУРНАЛ</div>
+</div>
+
+<h2 class="section-title">Главное здание B1 — 40 кабельных линий</h2>
+<div class="cable-journal-wrap" style="overflow-x:auto;">
+<table class="cable-journal">
+<colgroup>
+<col style="width:60px"><col style="width:190px"><col style="width:130px"><col style="width:130px">
+<col style="width:80px"><col style="width:50px"><col style="width:60px"><col style="width:110px">
+</colgroup>
+<tr><th>№</th><th>Маркировка линии</th><th>Начало (откуда)</th><th>Конец (куда)</th><th>Кабель</th><th>Жил</th><th>Длина, м</th><th>Характеристика</th></tr>
+<tr class="section-row"><td colspan="8">ЧАСТЬ 1 — Коммутатор SW-B1-ACC-01 (6 ПК + 4 камеры)</td></tr>
+<tr><td>1</td><td>UTP-Cat5e_PC-B1-ACC01-01</td><td>SW-B1-ACC-01 p.1</td><td>PC-B1-P1-01</td><td>UTP Cat.5e</td><td>4×2</td><td>8</td><td>Кабель-канал ПВХ</td></tr>
+<tr><td>2</td><td>UTP-Cat5e_PC-B1-ACC01-02</td><td>SW-B1-ACC-01 p.2</td><td>PC-B1-P1-02</td><td>UTP Cat.5e</td><td>4×2</td><td>10</td><td>Кабель-канал ПВХ</td></tr>
+<tr><td>3</td><td>UTP-Cat5e_PC-B1-ACC01-03</td><td>SW-B1-ACC-01 p.3</td><td>PC-B1-P1-03</td><td>UTP Cat.5e</td><td>4×2</td><td>12</td><td>Кабель-канал ПВХ</td></tr>
+<tr><td>4</td><td>UTP-Cat5e_PC-B1-ACC01-04</td><td>SW-B1-ACC-01 p.4</td><td>PC-B1-P1-04</td><td>UTP Cat.5e</td><td>4×2</td><td>15</td><td>Кабель-канал ПВХ</td></tr>
+<tr><td>5</td><td>UTP-Cat5e_PC-B1-ACC01-05</td><td>SW-B1-ACC-01 p.5</td><td>PC-B1-P1-05</td><td>UTP Cat.5e</td><td>4×2</td><td>18</td><td>Кабель-канал ПВХ</td></tr>
+<tr><td>6</td><td>UTP-Cat5e_PC-B1-ACC01-06</td><td>SW-B1-ACC-01 p.6</td><td>PC-B1-P1-06</td><td>UTP Cat.5e</td><td>4×2</td><td>20</td><td>Кабель-канал ПВХ</td></tr>
+<tr><td>7</td><td>UTP-Cat5e_CAM-B1-ACC01-01</td><td>SW-B1-ACC-01 p.7</td><td>CAM-B1-P1-01</td><td>UTP Cat.5e</td><td>4×2</td><td>7</td><td>Лоток, PoE</td></tr>
+<tr><td>8</td><td>UTP-Cat5e_CAM-B1-ACC01-02</td><td>SW-B1-ACC-01 p.8</td><td>CAM-B1-P1-02</td><td>UTP Cat.5e</td><td>4×2</td><td>9</td><td>Лоток, PoE</td></tr>
+<tr><td>9</td><td>UTP-Cat5e_CAM-B1-ACC01-03</td><td>SW-B1-ACC-01 p.9</td><td>CAM-B1-P1-03</td><td>UTP Cat.5e</td><td>4×2</td><td>14</td><td>Лоток, PoE</td></tr>
+<tr><td>10</td><td>UTP-Cat5e_CAM-B1-ACC01-04</td><td>SW-B1-ACC-01 p.10</td><td>CAM-B1-P1-04</td><td>UTP Cat.5e</td><td>4×2</td><td>22</td><td>Лоток, PoE</td></tr>
+<tr class="section-row"><td colspan="8">ЧАСТЬ 2 — Коммутатор SW-B1-ACC-02 (6 ПК + 3 камеры)</td></tr>
+<tr><td>11</td><td>UTP-Cat5e_PC-B1-ACC02-01</td><td>SW-B1-ACC-02 p.1</td><td>PC-B1-P2-01</td><td>UTP Cat.5e</td><td>4×2</td><td>9</td><td>Кабель-канал ПВХ</td></tr>
+<tr><td>12</td><td>UTP-Cat5e_PC-B1-ACC02-02</td><td>SW-B1-ACC-02 p.2</td><td>PC-B1-P2-02</td><td>UTP Cat.5e</td><td>4×2</td><td>11</td><td>Кабель-канал ПВХ</td></tr>
+<tr><td>13</td><td>UTP-Cat5e_PC-B1-ACC02-03</td><td>SW-B1-ACC-02 p.3</td><td>PC-B1-P2-03</td><td>UTP Cat.5e</td><td>4×2</td><td>13</td><td>Кабель-канал ПВХ</td></tr>
+<tr><td>14</td><td>UTP-Cat5e_PC-B1-ACC02-04</td><td>SW-B1-ACC-02 p.4</td><td>PC-B1-P2-04</td><td>UTP Cat.5e</td><td>4×2</td><td>16</td><td>Кабель-канал ПВХ</td></tr>
+<tr><td>15</td><td>UTP-Cat5e_PC-B1-ACC02-05</td><td>SW-B1-ACC-02 p.5</td><td>PC-B1-P2-05</td><td>UTP Cat.5e</td><td>4×2</td><td>19</td><td>Кабель-канал ПВХ</td></tr>
+<tr><td>16</td><td>UTP-Cat5e_PC-B1-ACC02-06</td><td>SW-B1-ACC-02 p.6</td><td>PC-B1-P2-06</td><td>UTP Cat.5e</td><td>4×2</td><td>21</td><td>Кабель-канал ПВХ</td></tr>
+<tr><td>17</td><td>UTP-Cat5e_CAM-B1-ACC02-01</td><td>SW-B1-ACC-02 p.7</td><td>CAM-B1-P2-01</td><td>UTP Cat.5e</td><td>4×2</td><td>8</td><td>Лоток, PoE</td></tr>
+<tr><td>18</td><td>UTP-Cat5e_CAM-B1-ACC02-02</td><td>SW-B1-ACC-02 p.8</td><td>CAM-B1-P2-02</td><td>UTP Cat.5e</td><td>4×2</td><td>12</td><td>Лоток, PoE</td></tr>
+<tr><td>19</td><td>UTP-Cat5e_CAM-B1-ACC02-03</td><td>SW-B1-ACC-02 p.9</td><td>CAM-B1-P2-03</td><td>UTP Cat.5e</td><td>4×2</td><td>17</td><td>Лоток, PoE</td></tr>
+<tr class="section-row"><td colspan="8">СЕРВЕРЫ и ЯДРО — Стойка RACK-B1-01</td></tr>
+<tr><td>20</td><td>UTP-Cat5e_SRV-B1-FILE-01</td><td>SW-B1-CORE p.5</td><td>SRV-B1-FILE-01</td><td>UTP Cat.5e</td><td>4×2</td><td>2</td><td>В стойке</td></tr>
+<tr><td>21</td><td>UTP-Cat5e_SRV-B1-FILE-02</td><td>SW-B1-CORE p.6</td><td>SRV-B1-FILE-02</td><td>UTP Cat.5e</td><td>4×2</td><td>2</td><td>В стойке</td></tr>
+<tr><td>22</td><td>UTP-Cat5e_SRV-B1-DB-01</td><td>SW-B1-CORE p.7</td><td>SRV-B1-DB-01</td><td>UTP Cat.5e</td><td>4×2</td><td>2</td><td>В стойке</td></tr>
+<tr><td>23</td><td>UTP-Cat5e_SRV-B1-DB-02</td><td>SW-B1-CORE p.8</td><td>SRV-B1-DB-02</td><td>UTP Cat.5e</td><td>4×2</td><td>2</td><td>В стойке</td></tr>
+<tr><td>24</td><td>UTP-Cat5e_SRV-B1-STOR</td><td>SW-B1-CORE p.9</td><td>SRV-B1-STOR</td><td>UTP Cat.5e</td><td>4×2</td><td>2</td><td>В стойке</td></tr>
+<tr><td>25</td><td>UTP-Cat5e_SRV-B1-SEC</td><td>SW-B1-CORE p.10</td><td>SRV-B1-SEC</td><td>UTP Cat.5e</td><td>4×2</td><td>2</td><td>В стойке</td></tr>
+<tr><td>26</td><td>UTP-Cat5e_CORE-ACC01-UPL</td><td>SW-B1-CORE p.1</td><td>SW-B1-ACC-01 uplink</td><td>UTP Cat.5e</td><td>4×2</td><td>35</td><td>Лоток</td></tr>
+<tr><td>27</td><td>UTP-Cat5e_CORE-ACC02-UPL</td><td>SW-B1-CORE p.2</td><td>SW-B1-ACC-02 uplink</td><td>UTP Cat.5e</td><td>4×2</td><td>42</td><td>Лоток</td></tr>
+<tr><td>28</td><td>UTP-Cat5e_CORE-FW-UPL</td><td>SW-B1-CORE p.3</td><td>FW-B1-MAIN int.LAN</td><td>UTP Cat.5e</td><td>4×2</td><td>1</td><td>В стойке</td></tr>
+<tr><td>29</td><td>UTP-Cat5e_FW-WAN-UPL</td><td>FW-B1-MAIN int.WAN</td><td>Провайдер Internet</td><td>UTP Cat.5e</td><td>4×2</td><td>5</td><td>Кабель-канал</td></tr>
+<tr><td>30</td><td>UTP-Cat5e_CORE-B2-UPL</td><td>SW-B1-CORE p.4</td><td>SW-B2-AGG uplink</td><td>UTP Cat.5e</td><td>4×2</td><td>120</td><td>Магистраль B1–B2</td></tr>
+<tr><td>31–40</td><td>[резерв B1]</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Резервные линии</td></tr>
+</table>
+</div>
+
+<h2 class="section-title" style="margin-top:30px;">Филиал B2 — 20 кабельных линий</h2>
+<div class="cable-journal-wrap" style="overflow-x:auto;">
+<table class="cable-journal">
+<colgroup>
+<col style="width:60px"><col style="width:190px"><col style="width:130px"><col style="width:130px">
+<col style="width:80px"><col style="width:50px"><col style="width:60px"><col style="width:110px">
+</colgroup>
+<tr><th>№</th><th>Маркировка линии</th><th>Начало (откуда)</th><th>Конец (куда)</th><th>Кабель</th><th>Жил</th><th>Длина, м</th><th>Характеристика</th></tr>
+<tr class="section-row"><td colspan="8">ЧАСТЬ 1 — Коммутатор SW-B2-ACC-01 (7 ПК + 1 камера)</td></tr>
+<tr><td>1</td><td>UTP-Cat5e_PC-B2-ACC01-01</td><td>SW-B2-ACC-01 p.1</td><td>PC-B2-P1-01</td><td>UTP Cat.5e</td><td>4×2</td><td>7</td><td>Кабель-канал ПВХ</td></tr>
+<tr><td>2</td><td>UTP-Cat5e_PC-B2-ACC01-02</td><td>SW-B2-ACC-01 p.2</td><td>PC-B2-P1-02</td><td>UTP Cat.5e</td><td>4×2</td><td>9</td><td>Кабель-канал ПВХ</td></tr>
+<tr><td>3</td><td>UTP-Cat5e_PC-B2-ACC01-03</td><td>SW-B2-ACC-01 p.3</td><td>PC-B2-P1-03</td><td>UTP Cat.5e</td><td>4×2</td><td>11</td><td>Кабель-канал ПВХ</td></tr>
+<tr><td>4</td><td>UTP-Cat5e_PC-B2-ACC01-04</td><td>SW-B2-ACC-01 p.4</td><td>PC-B2-P1-04</td><td>UTP Cat.5e</td><td>4×2</td><td>14</td><td>Кабель-канал ПВХ</td></tr>
+<tr><td>5</td><td>UTP-Cat5e_PC-B2-ACC01-05</td><td>SW-B2-ACC-01 p.5</td><td>PC-B2-P1-05</td><td>UTP Cat.5e</td><td>4×2</td><td>17</td><td>Кабель-канал ПВХ</td></tr>
+<tr><td>6</td><td>UTP-Cat5e_PC-B2-ACC01-06</td><td>SW-B2-ACC-01 p.6</td><td>PC-B2-P1-06</td><td>UTP Cat.5e</td><td>4×2</td><td>20</td><td>Кабель-канал ПВХ</td></tr>
+<tr><td>7</td><td>UTP-Cat5e_PC-B2-ACC01-07</td><td>SW-B2-ACC-01 p.7</td><td>PC-B2-P1-07</td><td>UTP Cat.5e</td><td>4×2</td><td>23</td><td>Кабель-канал ПВХ</td></tr>
+<tr><td>8</td><td>UTP-Cat5e_CAM-B2-ACC01-01</td><td>SW-B2-ACC-01 p.8</td><td>CAM-B2-P1-01</td><td>UTP Cat.5e</td><td>4×2</td><td>10</td><td>Лоток, PoE</td></tr>
+<tr class="section-row"><td colspan="8">ЧАСТЬ 2 — Коммутатор SW-B2-ACC-02 (5 ПК + 3 камеры)</td></tr>
+<tr><td>9</td><td>UTP-Cat5e_PC-B2-ACC02-01</td><td>SW-B2-ACC-02 p.1</td><td>PC-B2-P2-01</td><td>UTP Cat.5e</td><td>4×2</td><td>8</td><td>Кабель-канал ПВХ</td></tr>
+<tr><td>10</td><td>UTP-Cat5e_PC-B2-ACC02-02</td><td>SW-B2-ACC-02 p.2</td><td>PC-B2-P2-02</td><td>UTP Cat.5e</td><td>4×2</td><td>12</td><td>Кабель-канал ПВХ</td></tr>
+<tr><td>11</td><td>UTP-Cat5e_PC-B2-ACC02-03</td><td>SW-B2-ACC-02 p.3</td><td>PC-B2-P2-03</td><td>UTP Cat.5e</td><td>4×2</td><td>15</td><td>Кабель-канал ПВХ</td></tr>
+<tr><td>12</td><td>UTP-Cat5e_PC-B2-ACC02-04</td><td>SW-B2-ACC-02 p.4</td><td>PC-B2-P2-04</td><td>UTP Cat.5e</td><td>4×2</td><td>18</td><td>Кабель-канал ПВХ</td></tr>
+<tr><td>13</td><td>UTP-Cat5e_PC-B2-ACC02-05</td><td>SW-B2-ACC-02 p.5</td><td>PC-B2-P2-05</td><td>UTP Cat.5e</td><td>4×2</td><td>22</td><td>Кабель-канал ПВХ</td></tr>
+<tr><td>14</td><td>UTP-Cat5e_CAM-B2-ACC02-01</td><td>SW-B2-ACC-02 p.6</td><td>CAM-B2-P2-01</td><td>UTP Cat.5e</td><td>4×2</td><td>9</td><td>Лоток, PoE</td></tr>
+<tr><td>15</td><td>UTP-Cat5e_CAM-B2-ACC02-02</td><td>SW-B2-ACC-02 p.7</td><td>CAM-B2-P2-02</td><td>UTP Cat.5e</td><td>4×2</td><td>13</td><td>Лоток, PoE</td></tr>
+<tr><td>16</td><td>UTP-Cat5e_CAM-B2-ACC02-03</td><td>SW-B2-ACC-02 p.8</td><td>CAM-B2-P2-03</td><td>UTP Cat.5e</td><td>4×2</td><td>19</td><td>Лоток, PoE</td></tr>
+<tr class="section-row"><td colspan="8">ЧАСТЬ 3 — Коммутатор SW-B2-ACC-03 (11 ПК + 1 камера)</td></tr>
+<tr><td>17</td><td>UTP-Cat5e_PC-B2-ACC03-01..07</td><td>SW-B2-ACC-03 p.1–7</td><td>PC-B2-P3-01..07</td><td>UTP Cat.5e</td><td>4×2</td><td>7–28</td><td>Кабель-канал ПВХ</td></tr>
+<tr><td>18</td><td>UTP-Cat5e_PC-B2-ACC03-08..11</td><td>SW-B2-ACC-03 p.8–11</td><td>PC-B2-P3-08..11</td><td>UTP Cat.5e</td><td>4×2</td><td>15–35</td><td>Кабель-канал ПВХ</td></tr>
+<tr><td>19</td><td>UTP-Cat5e_CAM-B2-ACC03-01</td><td>SW-B2-ACC-03 p.12</td><td>CAM-B2-P3-01</td><td>UTP Cat.5e</td><td>4×2</td><td>11</td><td>Лоток, PoE</td></tr>
+<tr><td>20</td><td>UTP-Cat5e_B2-AGG-UPL</td><td>SW-B2-AGG p.uplink</td><td>SW-B1-CORE p.4</td><td>UTP Cat.5e</td><td>4×2</td><td>120</td><td>Магистраль B2–B1</td></tr>
+</table>
+</div>
+</div>
+
+        </div>
+
+        <!-- Нижнее меню защиты ДП -->
+        <div class="bottom-defense">
+            <ul class="bottom-defense-menu">
+<li><a href="defense_intro.html">ВВЕДЕНИЕ</a></li>
+<li><a href="defense_project.html">1 ПРОЕКТНАЯ ЧАСТЬ</a></li>
+<li><a href="defense_operation.html">2 ЭКСПЛУАТАЦИОННАЯ ЧАСТЬ</a></li>
+<li><a href="defense_economy.html">3 ЭКОНОМИЧЕСКАЯ ЧАСТЬ</a></li>
+<li><a href="defense_technology.html">4 ТЕХНОЛОГИЯ ВЕБ</a></li>
+            </ul>
+        </div>
+
+        <!-- Подвал -->
+        <footer class="main-footer">
+            <div class="footer-content">
+                <p>Бахаревой Александры Валерьевны&nbsp;&nbsp;|&nbsp;&nbsp;09.02.06. Сетевое и системное администрирование</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>

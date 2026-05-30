@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проектная часть — Пояснительная записка</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ═══ ЛЕВОЕ МЕНЮ ═══ -->
+    <div class="sidebar">
+        <nav class="toc-menu">
+            <ol>
+<li><a href="index.html">ТИТУЛЬНЫЙ ЛИСТ</a></li><li><a href="terms.html">ТЕРМИНЫ И ОПРЕДЕЛЕНИЯ</a></li><li><a href="abbreviations.html">ПЕРЕЧЕНЬ СОКРАЩЕНИЙ</a></li><li><a href="introduction.html">ВВЕДЕНИЕ</a></li><li><span class="toc-section-header">1 ПРОЕКТНАЯ ЧАСТЬ</span><ol class="sub-list"><li><a href="project.html#s1" class="active">1.1 Архитектура сети</a></li><li><a href="project.html#s2" class="active">1.2 Активное оборудование</a></li><li><a href="project.html#s3" class="active">1.3 Пассивное оборудование</a></li><li><a href="project.html#s4" class="active">1.4 Маркировка</a></li><li><a href="project.html#s5" class="active">1.5 Кабельный журнал</a></li><li><a href="project.html#s6" class="active">1.6 Схемы сети L1, L2, L3</a></li><li><a href="project.html#s7" class="active">1.7 Фасад ТКШ</a></li><li><a href="project.html#s8" class="active">1.8 Планы зданий</a></li></ol></li><li><span class="toc-section-header">2 ЭКСПЛУАТАЦИОННАЯ ЧАСТЬ</span><ol class="sub-list"><li><a href="operation.html#e1">2.1 Таблица VLAN</a></li><li><a href="operation.html#e2">2.2 IP-адресация</a></li><li><a href="operation.html#e3">2.3 Назначение портов</a></li><li><a href="operation.html#e4">2.4 Конфигурация оборудования</a></li><li><a href="operation.html#e5">2.5 Настройка сервисов</a></li><li><a href="operation.html#e6">2.6 Команды проверки</a></li></ol></li><li><span class="toc-section-header">3 ЭКОНОМИЧЕСКАЯ ЧАСТЬ</span><ol class="sub-list"><li><a href="economy.html#e1">3.1 Сравнение поставщиков</a></li><li><a href="economy.html#e2">3.2 Выбор поставщиков</a></li><li><a href="economy.html#e3">3.3 Норма расхода</a></li><li><a href="economy.html#e4">3.4 Смета затрат</a></li><li><a href="economy.html#e5">3.5 Трудозатраты</a></li><li><a href="economy.html#e6">3.6 Итоговая смета</a></li><li><a href="economy.html#e7">3.7 Выводы</a></li></ol></li><li><span class="toc-section-header">4 ТЕХНОЛОГИИ ВЕБ</span><ol class="sub-list"><li><a href="technology.html#t1">4.1 Подготовительный этап</a></li><li><a href="technology.html#t2">4.2 Дизайн и цветовая схема</a></li><li><a href="technology.html#t3">4.3 Вёрстка сайта</a></li><li><a href="technology.html#t4">4.4 Структура файлов</a></li><li><a href="technology.html#t5">4.5 Публикация</a></li></ol></li><li><a href="conclusion.html">ЗАКЛЮЧЕНИЕ</a></li><li><a href="list.html">СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ</a></li><li><a href="application.html">ПРИЛОЖЕНИЯ</a></li><li><span class="toc-section-header">ПРИЛОЖЕНИЯ</span><ol class="sub-list"><li><a href="application1.html">Приложение А — Физ. схема сайта</a></li><li><a href="application2.html">Приложение Б — Цветовая схема</a></li><li><a href="application3.html">Приложение В — Кабельный журнал</a></li></ol></li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- ═══ ПРАВАЯ КОЛОНКА ═══ -->
+    <div class="main-content">
+
+        <!-- Шапка -->
+        <header class="site-header">
+            <div class="logo-container">
+                <img src="../картинки/лого.jpg" alt="Логотип" class="logo-img">
+            </div>
+            <div class="header-text">
+                <div class="header-college">ГБПОУ «Пермский политехнический колледж имени Н.Г. Славянова»</div>
+                <div class="header-pz-label">Пояснительная записка</div>
+                <div class="header-theme">ПРОЕКТИРОВАНИЕ УНИВЕРСАЛЬНОЙ СКС ДЛЯ ФИЛИАЛА ОФИСНОЙ ОРГАНИЗАЦИИ</div>
+            </div>
+        </header>
+
+        <!-- Контент -->
+        <div class="content-center">
+
+<div class="text-content">
+<h1 class="page-title">1 ПРОЕКТНАЯ ЧАСТЬ</h1>
+
+<h2 class="section-title" id="s1">1.1 Описание архитектуры сети</h2>
+<p class="text-paragraph">Сеть построена по <strong>двухуровневой иерархической архитектуре</strong>: уровень ядра (L3-коммутатор) и уровень доступа (коммутаторы доступа в настенных ТКШ). Межсетевой экран UserGate расположен между L3-коммутатором, DMZ-сегментом и выходом в Интернет, образуя трёхзонную схему защиты: WAN — DMZ — LAN.</p>
+<p class="text-paragraph">Главное здание B1 имеет выход в Интернет через UserGate. Филиал B2 связан с главным зданием через защищённый VPN-канал; самостоятельного выхода в Интернет филиал не имеет. Маршрутизация между VLAN осуществляется на L3-коммутаторе посредством SVI-интерфейсов.</p>
+
+<h2 class="section-title" id="s2">1.2 Выбор активного оборудования</h2>
+<div style="overflow-x:auto;">
+<p class="table-caption">Таблица 2 — Активное оборудование головного офиса (B1)</p>
+<table class="data-table">
+<tr><th>Наименование</th><th>Модель</th><th>Кол-во</th><th>Назначение</th></tr>
+<tr><td>Межсетевой экран (реальный)</td><td>UserGate F100</td><td>1</td><td>МЭ, DMZ, VPN-сервер, выход в Internet</td></tr>
+<tr><td>МЭ (в Cisco PT)</td><td>Cisco ASA 5505</td><td>1</td><td>Моделирование функций UserGate</td></tr>
+<tr><td>L3-коммутатор ядра</td><td>MikroTik CRS354-48G-4S+2Q+</td><td>1</td><td>Маршрутизация между VLAN (SVI), ядро сети</td></tr>
+<tr><td>Коммутатор доступа B1 (ч.1)</td><td>D-Link DGS-1210-28MP</td><td>1</td><td>6 РМ + 4 камеры PoE, часть 1</td></tr>
+<tr><td>Коммутатор доступа B1 (ч.2)</td><td>D-Link DGS-1210-28MP</td><td>1</td><td>6 РМ + 3 камеры PoE, часть 2</td></tr>
+<tr><td>ИБП</td><td>Systeme Electric SRT 5000</td><td>1</td><td>Резервное питание стойки 42U</td></tr>
+<tr><td>Файловый сервер</td><td>Dell PowerEdge T360</td><td>2</td><td>Хранение общих файлов</td></tr>
+<tr><td>Сервер БД</td><td>Dell PowerEdge R360</td><td>2</td><td>Базы данных</td></tr>
+<tr><td>Сервер хранения данных</td><td>Dell PowerEdge R730xd</td><td>1</td><td>СХД 500 ТБ</td></tr>
+<tr><td>Сервер безопасности</td><td>Dell PowerEdge T160</td><td>1</td><td>Видеонаблюдение, контроль доступа</td></tr>
+</table>
+</div>
+
+<div style="overflow-x:auto;">
+<p class="table-caption">Таблица 3 — Активное оборудование филиала (B2)</p>
+<table class="data-table">
+<tr><th>Наименование</th><th>Модель</th><th>Кол-во</th><th>Назначение</th></tr>
+<tr><td>Коммутатор агрегации B2</td><td>MikroTik CRS326-24G-2S+RM</td><td>1</td><td>Агрегация трафика филиала, uplink к B1</td></tr>
+<tr><td>Коммутатор доступа B2 (ч.1)</td><td>D-Link DGS-1210-28P</td><td>1</td><td>7 РМ + 1 камера PoE, часть 1</td></tr>
+<tr><td>Коммутатор доступа B2 (ч.2)</td><td>D-Link DGS-1210-28P</td><td>1</td><td>5 РМ + 3 камеры PoE, часть 2</td></tr>
+<tr><td>Коммутатор доступа B2 (ч.3)</td><td>D-Link DGS-1210-28P</td><td>1</td><td>11 РМ + 1 камера PoE, часть 3</td></tr>
+<tr><td>ИБП</td><td>Systeme Electric SRT 3000</td><td>1</td><td>Резервное питание шкафа 15U</td></tr>
+</table>
+</div>
+
+<h2 class="section-title" id="s3">1.3 Выбор пассивного оборудования</h2>
+<div style="overflow-x:auto;">
+<p class="table-caption">Таблица 4 — Пассивное оборудование</p>
+<table class="data-table">
+<tr><th>Наименование</th><th>Характеристика</th><th>Количество</th><th>Назначение</th></tr>
+<tr><td>Кабель UTP</td><td>Cat.5e, U/UTP 4×2×0,52</td><td>~1 600 м</td><td>Горизонтальные линии B1 и B2</td></tr>
+<tr><td>Розетка телекоммуникационная</td><td>RJ-45, Cat.5e, 2 порта</td><td>47 шт.</td><td>Рабочие места и камеры</td></tr>
+<tr><td>Патч-панель 24 порта</td><td>19″, Cat.5e, 1U</td><td>5 шт.</td><td>По одной на каждый настенный ТКШ</td></tr>
+<tr><td>Патч-панель 48 портов</td><td>19″, Cat.5e, 2U</td><td>1 шт.</td><td>Стойка B1 (серверная)</td></tr>
+<tr><td>Стойка серверная</td><td>19″, 42U, напольная</td><td>1 шт.</td><td>Серверная B1</td></tr>
+<tr><td>Шкаф настенный</td><td>19″, 9U–12U</td><td>5 шт.</td><td>По одному на часть B1(×2) и B2(×3)</td></tr>
+<tr><td>Кабель-канал ПВХ</td><td>40×25 мм</td><td>~640 м</td><td>Горизонтальные трассы в помещениях</td></tr>
+<tr><td>Лоток перфорированный</td><td>100×50 мм</td><td>~120 м</td><td>Магистральные трассы по коридорам</td></tr>
+</table>
+</div>
+
+<h2 class="section-title" id="s4">1.4 Маркировка оборудования и кабельных линий</h2>
+<p class="text-paragraph">Маркировка выполнена в соответствии с ГОСТ Р 58468-2019. Формат маркировки кабельных линий: <strong>UTP-Cat5e_[устройство]-[здание]-[сегмент]-[номер]</strong>.</p>
+<div style="overflow-x:auto;">
+<p class="table-caption">Таблица 5 — Маркировка активного оборудования</p>
+<table class="data-table">
+<tr><th>Оборудование</th><th>Маркировка</th></tr>
+<tr><td colspan="2" style="background:#f0e8d8;font-weight:bold;text-align:center">Главный офис (B1)</td></tr>
+<tr><td>Стойка ТКШ 42U</td><td>RACK-B1-01</td></tr>
+<tr><td>L3-коммутатор ядра</td><td>SW-B1-CORE</td></tr>
+<tr><td>Коммутатор доступа, часть 1</td><td>SW-B1-ACC-01</td></tr>
+<tr><td>Коммутатор доступа, часть 2</td><td>SW-B1-ACC-02</td></tr>
+<tr><td>МЭ UserGate / Cisco ASA</td><td>FW-B1-MAIN</td></tr>
+<tr><td>Серверы (файловые)</td><td>SRV-B1-FILE-01, SRV-B1-FILE-02</td></tr>
+<tr><td>Серверы (базы данных)</td><td>SRV-B1-DB-01, SRV-B1-DB-02</td></tr>
+<tr><td>Сервер хранения данных</td><td>SRV-B1-STOR</td></tr>
+<tr><td>Сервер безопасности</td><td>SRV-B1-SEC</td></tr>
+<tr><td>ИБП</td><td>UPS-B1-01</td></tr>
+<tr><td colspan="2" style="background:#f0e8d8;font-weight:bold;text-align:center">Филиал (B2)</td></tr>
+<tr><td>Шкаф настенный 15U</td><td>RACK-B2-01</td></tr>
+<tr><td>Коммутатор агрегации</td><td>SW-B2-AGG</td></tr>
+<tr><td>Коммутатор доступа, часть 1</td><td>SW-B2-ACC-01</td></tr>
+<tr><td>Коммутатор доступа, часть 2</td><td>SW-B2-ACC-02</td></tr>
+<tr><td>Коммутатор доступа, часть 3</td><td>SW-B2-ACC-03</td></tr>
+<tr><td>ИБП</td><td>UPS-B2-01</td></tr>
+</table>
+</div>
+
+<h2 class="section-title" id="s5">1.5 Кабельный журнал</h2>
+<p class="text-paragraph">Кабельный журнал содержит 60 линий: 40 линий в главном здании B1 и 20 линий в филиале B2. Подробный кабельный журнал представлен в <a href="application3.html">Приложении В</a>.</p>
+
+<h2 class="section-title" id="s6">1.6 Схемы сети L1, L2, L3</h2>
+<p class="text-paragraph">Схемы выполнены в Cisco Packet Tracer 6.2 Student Version и представлены ниже.</p>
+<div class="figure">
+    <img src="../картинки/L1.png" alt="Схема L1 — физический уровень">
+    <p>Рисунок 1 — Схема сети L1 (физический уровень)</p>
+</div>
+<div class="figure">
+    <img src="../картинки/L2.png" alt="Схема L2 — канальный уровень, VLAN">
+    <p>Рисунок 2 — Схема сети L2 (канальный уровень, VLAN)</p>
+</div>
+<div class="figure">
+    <img src="../картинки/L3.png" alt="Схема L3 — сетевой уровень, IP-маршрутизация">
+    <p>Рисунок 3 — Схема сети L3 (сетевой уровень, IP-маршрутизация)</p>
+</div>
+
+<h2 class="section-title" id="s7">1.7 Фасад телекоммуникационного шкафа</h2>
+<p class="text-paragraph">В главном здании B1 установлена напольная стойка 42U, содержащая всё активное и серверное оборудование. Порядок размещения: сверху — пассивное коммутационное оборудование (патч-панели), далее — активное сетевое оборудование, ниже — серверы, в нижней части — ИБП.</p>
+<div class="figure">
+    <img src="../картинки/ТКШ_B1.png" alt="Фасад ТКШ — стойка 42U, главный офис B1">
+    <p>Рисунок 4 — Фасад ТКШ главного офиса B1 (стойка 42U)</p>
+</div>
+
+<h2 class="section-title" id="s8">1.8 Планы зданий</h2>
+<p class="text-paragraph">Ниже представлены поэтажные планы главного здания B1 и филиала B2 — исходные и с проложенными кабельными трассами СКС.</p>
+<div class="figure">
+    <img src="../картинки/Гл_здание1.png" alt="План B1 — исходный">
+    <p>Рисунок 5 — Исходный план главного здания B1</p>
+</div>
+<div class="figure">
+    <img src="../картинки/Гл_здание.png" alt="План B1 — с СКС">
+    <p>Рисунок 6 — План главного здания B1 с проложенной СКС</p>
+</div>
+<div class="figure">
+    <img src="../картинки/Филиал1.png" alt="План B2 — исходный">
+    <p>Рисунок 7 — Исходный план филиала B2</p>
+</div>
+<div class="figure">
+    <img src="../картинки/Филиал.png" alt="План B2 — с СКС">
+    <p>Рисунок 8 — План филиала B2 с проложенной СКС</p>
+</div>
+</div>
+
+        </div>
+
+        <!-- Нижнее меню защиты ДП -->
+        <div class="bottom-defense">
+            <ul class="bottom-defense-menu">
+<li><a href="defense_intro.html">ВВЕДЕНИЕ</a></li>
+<li><a href="defense_project.html">1 ПРОЕКТНАЯ ЧАСТЬ</a></li>
+<li><a href="defense_operation.html">2 ЭКСПЛУАТАЦИОННАЯ ЧАСТЬ</a></li>
+<li><a href="defense_economy.html">3 ЭКОНОМИЧЕСКАЯ ЧАСТЬ</a></li>
+<li><a href="defense_technology.html">4 ТЕХНОЛОГИЯ ВЕБ</a></li>
+            </ul>
+        </div>
+
+        <!-- Подвал -->
+        <footer class="main-footer">
+            <div class="footer-content">
+                <p>Бахаревой Александры Валерьевны&nbsp;&nbsp;|&nbsp;&nbsp;09.02.06. Сетевое и системное администрирование</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>

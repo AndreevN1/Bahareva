@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эксплуатационная часть — Пояснительная записка</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ═══ ЛЕВОЕ МЕНЮ ═══ -->
+    <div class="sidebar">
+        <nav class="toc-menu">
+            <ol>
+<li><a href="index.html">ТИТУЛЬНЫЙ ЛИСТ</a></li><li><a href="terms.html">ТЕРМИНЫ И ОПРЕДЕЛЕНИЯ</a></li><li><a href="abbreviations.html">ПЕРЕЧЕНЬ СОКРАЩЕНИЙ</a></li><li><a href="introduction.html">ВВЕДЕНИЕ</a></li><li><span class="toc-section-header">1 ПРОЕКТНАЯ ЧАСТЬ</span><ol class="sub-list"><li><a href="project.html#s1">1.1 Архитектура сети</a></li><li><a href="project.html#s2">1.2 Активное оборудование</a></li><li><a href="project.html#s3">1.3 Пассивное оборудование</a></li><li><a href="project.html#s4">1.4 Маркировка</a></li><li><a href="project.html#s5">1.5 Кабельный журнал</a></li><li><a href="project.html#s6">1.6 Схемы сети L1, L2, L3</a></li><li><a href="project.html#s7">1.7 Фасад ТКШ</a></li><li><a href="project.html#s8">1.8 Планы зданий</a></li></ol></li><li><span class="toc-section-header">2 ЭКСПЛУАТАЦИОННАЯ ЧАСТЬ</span><ol class="sub-list"><li><a href="operation.html#e1" class="active">2.1 Таблица VLAN</a></li><li><a href="operation.html#e2" class="active">2.2 IP-адресация</a></li><li><a href="operation.html#e3" class="active">2.3 Назначение портов</a></li><li><a href="operation.html#e4" class="active">2.4 Конфигурация оборудования</a></li><li><a href="operation.html#e5" class="active">2.5 Настройка сервисов</a></li><li><a href="operation.html#e6" class="active">2.6 Команды проверки</a></li></ol></li><li><span class="toc-section-header">3 ЭКОНОМИЧЕСКАЯ ЧАСТЬ</span><ol class="sub-list"><li><a href="economy.html#e1">3.1 Сравнение поставщиков</a></li><li><a href="economy.html#e2">3.2 Выбор поставщиков</a></li><li><a href="economy.html#e3">3.3 Норма расхода</a></li><li><a href="economy.html#e4">3.4 Смета затрат</a></li><li><a href="economy.html#e5">3.5 Трудозатраты</a></li><li><a href="economy.html#e6">3.6 Итоговая смета</a></li><li><a href="economy.html#e7">3.7 Выводы</a></li></ol></li><li><span class="toc-section-header">4 ТЕХНОЛОГИИ ВЕБ</span><ol class="sub-list"><li><a href="technology.html#t1">4.1 Подготовительный этап</a></li><li><a href="technology.html#t2">4.2 Дизайн и цветовая схема</a></li><li><a href="technology.html#t3">4.3 Вёрстка сайта</a></li><li><a href="technology.html#t4">4.4 Структура файлов</a></li><li><a href="technology.html#t5">4.5 Публикация</a></li></ol></li><li><a href="conclusion.html">ЗАКЛЮЧЕНИЕ</a></li><li><a href="list.html">СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ</a></li><li><a href="application.html">ПРИЛОЖЕНИЯ</a></li><li><span class="toc-section-header">ПРИЛОЖЕНИЯ</span><ol class="sub-list"><li><a href="application1.html">Приложение А — Физ. схема сайта</a></li><li><a href="application2.html">Приложение Б — Цветовая схема</a></li><li><a href="application3.html">Приложение В — Кабельный журнал</a></li></ol></li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- ═══ ПРАВАЯ КОЛОНКА ═══ -->
+    <div class="main-content">
+
+        <!-- Шапка -->
+        <header class="site-header">
+            <div class="logo-container">
+                <img src="../картинки/лого.jpg" alt="Логотип" class="logo-img">
+            </div>
+            <div class="header-text">
+                <div class="header-college">ГБПОУ «Пермский политехнический колледж имени Н.Г. Славянова»</div>
+                <div class="header-pz-label">Пояснительная записка</div>
+                <div class="header-theme">ПРОЕКТИРОВАНИЕ УНИВЕРСАЛЬНОЙ СКС ДЛЯ ФИЛИАЛА ОФИСНОЙ ОРГАНИЗАЦИИ</div>
+            </div>
+        </header>
+
+        <!-- Контент -->
+        <div class="content-center">
+
+<div class="text-content">
+<h1 class="page-title">2 ЭКСПЛУАТАЦИОННАЯ ЧАСТЬ</h1>
+
+<h2 class="section-title" id="e1">2.1 Таблица VLAN</h2>
+<div style="overflow-x:auto;">
+<p class="table-caption">Таблица 6 — Список VLAN проекта</p>
+<table class="data-table">
+<tr><th>VLAN ID</th><th>Название</th><th>Назначение</th><th>Подсеть</th></tr>
+<tr><td>100</td><td>SERVERS</td><td>Серверы головного офиса</td><td>192.168.30.0/28</td></tr>
+<tr><td>200</td><td>USERS</td><td>Рабочие места пользователей (B1 и B2)</td><td>192.168.40.0/27</td></tr>
+<tr><td>300</td><td>CCTV</td><td>IP-камеры видеонаблюдения (PoE)</td><td>192.168.60.0/28</td></tr>
+<tr><td>400</td><td>DMZ</td><td>Публичные серверы (DMZ-зона)</td><td>192.168.10.0/28</td></tr>
+<tr><td>999</td><td>MGMT</td><td>Управление сетевым оборудованием</td><td>192.168.99.0/29</td></tr>
+</table>
+</div>
+
+<h2 class="section-title" id="e2">2.2 IP-адресация</h2>
+<div style="overflow-x:auto;">
+<p class="table-caption">Таблица 7 — IP-адресация по VLAN</p>
+<table class="data-table">
+<tr><th>VLAN</th><th>Название</th><th>Подсеть</th><th>Маска</th><th>Шлюз (SVI)</th><th>Диапазон хостов</th><th>Макс. хостов</th></tr>
+<tr><td>100</td><td>SERVERS</td><td>192.168.30.0</td><td>/28 (255.255.255.240)</td><td>192.168.30.1</td><td>.2 — .14</td><td>13</td></tr>
+<tr><td>200</td><td>USERS</td><td>192.168.40.0</td><td>/27 (255.255.255.224)</td><td>192.168.40.1</td><td>.2 — .30</td><td>29</td></tr>
+<tr><td>300</td><td>CCTV</td><td>192.168.60.0</td><td>/28 (255.255.255.240)</td><td>192.168.60.1</td><td>.2 — .14</td><td>13</td></tr>
+<tr><td>400</td><td>DMZ</td><td>192.168.10.0</td><td>/28 (255.255.255.240)</td><td>192.168.10.1</td><td>.2 — .14</td><td>13</td></tr>
+<tr><td>999</td><td>MGMT</td><td>192.168.99.0</td><td>/29 (255.255.255.248)</td><td>192.168.99.1</td><td>.2 — .6</td><td>6</td></tr>
+</table>
+</div>
+
+<h2 class="section-title" id="e3">2.3 Назначение портов центрального коммутатора</h2>
+<div style="overflow-x:auto;">
+<p class="table-caption">Таблица 8 — Назначение портов L3-коммутатора ядра B1 (SW-B1-CORE)</p>
+<table class="data-table">
+<tr><th>Порт</th><th>Подключение</th><th>Режим</th><th>VLAN</th></tr>
+<tr><td>Gi1/0/1</td><td>SW-B1-ACC-01 (часть 1)</td><td>Trunk</td><td>200, 300, 999</td></tr>
+<tr><td>Gi1/0/2</td><td>SW-B1-ACC-02 (часть 2)</td><td>Trunk</td><td>200, 300, 999</td></tr>
+<tr><td>Gi1/0/3</td><td>FW-B1-MAIN (UserGate/ASA)</td><td>Trunk</td><td>100, 400, native</td></tr>
+<tr><td>Gi1/0/4</td><td>Uplink к B2 (через VPN)</td><td>Trunk</td><td>200, 300</td></tr>
+<tr><td>Gi1/0/5–10</td><td>Серверы VLAN 100</td><td>Access</td><td>100</td></tr>
+<tr><td>Vlan100 SVI</td><td>192.168.30.1/28</td><td>—</td><td>SERVERS</td></tr>
+<tr><td>Vlan200 SVI</td><td>192.168.40.1/27</td><td>—</td><td>USERS</td></tr>
+<tr><td>Vlan300 SVI</td><td>192.168.60.1/28</td><td>—</td><td>CCTV</td></tr>
+<tr><td>Vlan400 SVI</td><td>192.168.10.1/28</td><td>—</td><td>DMZ</td></tr>
+<tr><td>Vlan999 SVI</td><td>192.168.99.1/29</td><td>—</td><td>MGMT</td></tr>
+</table>
+</div>
+
+<h2 class="section-title" id="e4">2.4 Конфигурация оборудования</h2>
+<p class="text-paragraph">Конфигурация L3-коммутатора ядра (SW-B1-CORE) — создание VLAN и SVI-интерфейсов:</p>
+<div class="code-block">! Создание VLAN
+vlan 100
+ name SERVERS
+vlan 200
+ name USERS
+vlan 300
+ name CCTV
+vlan 400
+ name DMZ
+vlan 999
+ name MGMT
+
+! SVI-интерфейсы для маршрутизации между VLAN
+interface Vlan100
+ ip address 192.168.30.1 255.255.255.240
+ no shutdown
+interface Vlan200
+ ip address 192.168.40.1 255.255.255.224
+ no shutdown
+interface Vlan300
+ ip address 192.168.60.1 255.255.255.240
+ no shutdown
+interface Vlan400
+ ip address 192.168.10.1 255.255.255.240
+ no shutdown
+interface Vlan999
+ ip address 192.168.99.1 255.255.255.248
+ no shutdown
+
+! Uplink к коммутатору доступа (Trunk)
+interface GigabitEthernet1/0/1
+ switchport mode trunk
+ switchport trunk allowed vlan 200,300,999
+
+! Маршрут по умолчанию к МЭ
+ip routing
+ip route 0.0.0.0 0.0.0.0 192.168.10.2</div>
+
+<p class="text-paragraph">Конфигурация коммутатора доступа (SW-B1-ACC-01) — назначение портов:</p>
+<div class="code-block">! Порты рабочих мест — VLAN 200
+interface range GigabitEthernet0/1-6
+ switchport mode access
+ switchport access vlan 200
+ spanning-tree portfast
+
+! Порты IP-камер (PoE) — VLAN 300
+interface range GigabitEthernet0/7-10
+ switchport mode access
+ switchport access vlan 300
+ spanning-tree portfast
+
+! Uplink к ядру — Trunk
+interface GigabitEthernet0/24
+ switchport mode trunk
+ switchport trunk allowed vlan 200,300,999</div>
+
+<p class="text-paragraph">Скриншоты конфигурации из Cisco Packet Tracer будут добавлены после завершения моделирования.</p>
+<div class="figure">
+    <img src="../картинки/циско1.png" alt="Схема сети в Cisco Packet Tracer">
+    <p>Рисунок 9 — Общая схема сети в Cisco Packet Tracer 6.2</p>
+</div>
+
+<h2 class="section-title" id="e5">2.5 Настройка сетевых сервисов</h2>
+<p class="text-paragraph">В главном здании B1 планируется настройка следующих сервисов:</p>
+<ul>
+<li><strong>DHCP-сервер</strong> — автоматическая выдача IP-адресов устройствам VLAN 200 (USERS) и VLAN 300 (CCTV);</li>
+<li><strong>DNS-сервер</strong> — разрешение внутренних доменных имён корпоративной сети;</li>
+<li><strong>HTTP-сервер (DMZ)</strong> — корпоративный веб-портал, доступный из Интернета через DMZ;</li>
+<li><strong>FTP-сервер (DMZ)</strong> — файловый обмен с внешними контрагентами через DMZ;</li>
+<li><strong>VPN-сервер</strong> — защищённый канал до филиала B2 (через UserGate / Cisco ASA).</li>
+</ul>
+
+<h2 class="section-title" id="e6">2.6 Команды проверки работоспособности</h2>
+<div class="code-block">! Проверка таблицы VLAN
+show vlan brief
+
+! Проверка SVI-интерфейсов и маршрутизации
+show ip interface brief
+show ip route
+
+! Проверка таблицы MAC-адресов
+show mac address-table
+
+! Проверка DHCP-привязок
+show ip dhcp binding
+
+! Проверка trunk-портов
+show interfaces trunk
+
+! Ping между VLAN (с SVI)
+ping 192.168.40.2 source vlan 100
+ping 192.168.60.2 source vlan 200
+
+! Проверка VPN-туннеля (Cisco ASA)
+show crypto isakmp sa
+show crypto ipsec sa</div>
+</div>
+
+        </div>
+
+        <!-- Нижнее меню защиты ДП -->
+        <div class="bottom-defense">
+            <ul class="bottom-defense-menu">
+<li><a href="defense_intro.html">ВВЕДЕНИЕ</a></li>
+<li><a href="defense_project.html">1 ПРОЕКТНАЯ ЧАСТЬ</a></li>
+<li><a href="defense_operation.html">2 ЭКСПЛУАТАЦИОННАЯ ЧАСТЬ</a></li>
+<li><a href="defense_economy.html">3 ЭКОНОМИЧЕСКАЯ ЧАСТЬ</a></li>
+<li><a href="defense_technology.html">4 ТЕХНОЛОГИЯ ВЕБ</a></li>
+            </ul>
+        </div>
+
+        <!-- Подвал -->
+        <footer class="main-footer">
+            <div class="footer-content">
+                <p>Бахаревой Александры Валерьевны&nbsp;&nbsp;|&nbsp;&nbsp;09.02.06. Сетевое и системное администрирование</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>

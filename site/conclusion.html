@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заключение — Пояснительная записка</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ═══ ЛЕВОЕ МЕНЮ ═══ -->
+    <div class="sidebar">
+        <nav class="toc-menu">
+            <ol>
+<li><a href="index.html">ТИТУЛЬНЫЙ ЛИСТ</a></li><li><a href="terms.html">ТЕРМИНЫ И ОПРЕДЕЛЕНИЯ</a></li><li><a href="abbreviations.html">ПЕРЕЧЕНЬ СОКРАЩЕНИЙ</a></li><li><a href="introduction.html">ВВЕДЕНИЕ</a></li><li><span class="toc-section-header">1 ПРОЕКТНАЯ ЧАСТЬ</span><ol class="sub-list"><li><a href="project.html#s1">1.1 Архитектура сети</a></li><li><a href="project.html#s2">1.2 Активное оборудование</a></li><li><a href="project.html#s3">1.3 Пассивное оборудование</a></li><li><a href="project.html#s4">1.4 Маркировка</a></li><li><a href="project.html#s5">1.5 Кабельный журнал</a></li><li><a href="project.html#s6">1.6 Схемы сети L1, L2, L3</a></li><li><a href="project.html#s7">1.7 Фасад ТКШ</a></li><li><a href="project.html#s8">1.8 Планы зданий</a></li></ol></li><li><span class="toc-section-header">2 ЭКСПЛУАТАЦИОННАЯ ЧАСТЬ</span><ol class="sub-list"><li><a href="operation.html#e1">2.1 Таблица VLAN</a></li><li><a href="operation.html#e2">2.2 IP-адресация</a></li><li><a href="operation.html#e3">2.3 Назначение портов</a></li><li><a href="operation.html#e4">2.4 Конфигурация оборудования</a></li><li><a href="operation.html#e5">2.5 Настройка сервисов</a></li><li><a href="operation.html#e6">2.6 Команды проверки</a></li></ol></li><li><span class="toc-section-header">3 ЭКОНОМИЧЕСКАЯ ЧАСТЬ</span><ol class="sub-list"><li><a href="economy.html#e1">3.1 Сравнение поставщиков</a></li><li><a href="economy.html#e2">3.2 Выбор поставщиков</a></li><li><a href="economy.html#e3">3.3 Норма расхода</a></li><li><a href="economy.html#e4">3.4 Смета затрат</a></li><li><a href="economy.html#e5">3.5 Трудозатраты</a></li><li><a href="economy.html#e6">3.6 Итоговая смета</a></li><li><a href="economy.html#e7">3.7 Выводы</a></li></ol></li><li><span class="toc-section-header">4 ТЕХНОЛОГИИ ВЕБ</span><ol class="sub-list"><li><a href="technology.html#t1">4.1 Подготовительный этап</a></li><li><a href="technology.html#t2">4.2 Дизайн и цветовая схема</a></li><li><a href="technology.html#t3">4.3 Вёрстка сайта</a></li><li><a href="technology.html#t4">4.4 Структура файлов</a></li><li><a href="technology.html#t5">4.5 Публикация</a></li></ol></li><li><a href="conclusion.html" class="active">ЗАКЛЮЧЕНИЕ</a></li><li><a href="list.html">СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ</a></li><li><a href="application.html">ПРИЛОЖЕНИЯ</a></li><li><span class="toc-section-header">ПРИЛОЖЕНИЯ</span><ol class="sub-list"><li><a href="application1.html">Приложение А — Физ. схема сайта</a></li><li><a href="application2.html">Приложение Б — Цветовая схема</a></li><li><a href="application3.html">Приложение В — Кабельный журнал</a></li></ol></li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- ═══ ПРАВАЯ КОЛОНКА ═══ -->
+    <div class="main-content">
+
+        <!-- Шапка -->
+        <header class="site-header">
+            <div class="logo-container">
+                <img src="../картинки/лого.jpg" alt="Логотип" class="logo-img">
+            </div>
+            <div class="header-text">
+                <div class="header-college">ГБПОУ «Пермский политехнический колледж имени Н.Г. Славянова»</div>
+                <div class="header-pz-label">Пояснительная записка</div>
+                <div class="header-theme">ПРОЕКТИРОВАНИЕ УНИВЕРСАЛЬНОЙ СКС ДЛЯ ФИЛИАЛА ОФИСНОЙ ОРГАНИЗАЦИИ</div>
+            </div>
+        </header>
+
+        <!-- Контент -->
+        <div class="content-center">
+
+<div class="text-content">
+<h1 class="page-title">ЗАКЛЮЧЕНИЕ</h1>
+
+<p class="text-paragraph">В ходе выполнения дипломного проекта была спроектирована универсальная структурированная кабельная сеть для двух площадок офисной организации — главного здания B1 и филиала B2.</p>
+
+<p class="text-paragraph">В рамках проекта решены все поставленные задачи:</p>
+<ul>
+<li>проведён анализ организационной структуры и требований к сетевой инфраструктуре: 35 рабочих мест (12 в B1 и 23 в B2) и 12 IP-камер (7 в B1 и 5 в B2);</li>
+<li>определён состав активного и пассивного оборудования — подобраны коммутаторы D-Link с поддержкой PoE, L3-коммутатор MikroTik, межсетевой экран UserGate;</li>
+<li>разработана схема сегментации сети на 5 VLAN: SERVERS (100), USERS (200), CCTV (300), DMZ (400), MGMT (999);</li>
+<li>разработана IP-адресация для каждого сегмента с учётом требований к количеству хостов;</li>
+<li>составлен кабельный журнал: 60 кабельных линий (40 в B1, 20 в B2), общая длина кабеля ~1 600 м без запаса;</li>
+<li>оформлены схемы ТКШ (42U для B1), схемы уровней L1, L2, L3 и планы обоих зданий;</li>
+<li>разработан веб-сайт пояснительной записки из 21 HTML-страницы с двумя навигационными меню.</li>
+</ul>
+
+<p class="text-paragraph">Проектируемая СКС соответствует требованиям ГОСТ Р 53246-2008 и ГОСТ Р 53245-2008. Применение VLAN-сегментации обеспечивает изоляцию трафика видеонаблюдения, пользовательских данных и DMZ-серверов, что существенно повышает безопасность сетевой инфраструктуры. Межсетевой экран UserGate на границе с Интернетом и классическая трёхзонная архитектура (WAN–DMZ–LAN) исключают возможность прямого доступа из Интернета к внутренним ресурсам организации.</p>
+
+<p class="text-paragraph">Экономическая эффективность достигнута за счёт выбора кабеля UTP Cat.5e, применения настенных ТКШ для коммутаторов доступа и централизации серверного оборудования в главном здании без дублирования в филиале.</p>
+
+<p class="text-paragraph">Результатом дипломного проекта является готовая проектная документация СКС, которая может быть использована для реализации сетевой инфраструктуры описанной офисной организации.</p>
+</div>
+
+        </div>
+
+        <!-- Нижнее меню защиты ДП -->
+        <div class="bottom-defense">
+            <ul class="bottom-defense-menu">
+<li><a href="defense_intro.html">ВВЕДЕНИЕ</a></li>
+<li><a href="defense_project.html">1 ПРОЕКТНАЯ ЧАСТЬ</a></li>
+<li><a href="defense_operation.html">2 ЭКСПЛУАТАЦИОННАЯ ЧАСТЬ</a></li>
+<li><a href="defense_economy.html">3 ЭКОНОМИЧЕСКАЯ ЧАСТЬ</a></li>
+<li><a href="defense_technology.html">4 ТЕХНОЛОГИЯ ВЕБ</a></li>
+            </ul>
+        </div>
+
+        <!-- Подвал -->
+        <footer class="main-footer">
+            <div class="footer-content">
+                <p>Бахаревой Александры Валерьевны&nbsp;&nbsp;|&nbsp;&nbsp;09.02.06. Сетевое и системное администрирование</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>

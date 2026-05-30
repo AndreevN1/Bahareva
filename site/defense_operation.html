@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шпаргалка: Эксплуатационная часть — Пояснительная записка</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ═══ ЛЕВОЕ МЕНЮ ═══ -->
+    <div class="sidebar">
+        <nav class="toc-menu">
+            <ol>
+<li><a href="index.html">ТИТУЛЬНЫЙ ЛИСТ</a></li><li><a href="terms.html">ТЕРМИНЫ И ОПРЕДЕЛЕНИЯ</a></li><li><a href="abbreviations.html">ПЕРЕЧЕНЬ СОКРАЩЕНИЙ</a></li><li><a href="introduction.html">ВВЕДЕНИЕ</a></li><li><span class="toc-section-header">1 ПРОЕКТНАЯ ЧАСТЬ</span><ol class="sub-list"><li><a href="project.html#s1">1.1 Архитектура сети</a></li><li><a href="project.html#s2">1.2 Активное оборудование</a></li><li><a href="project.html#s3">1.3 Пассивное оборудование</a></li><li><a href="project.html#s4">1.4 Маркировка</a></li><li><a href="project.html#s5">1.5 Кабельный журнал</a></li><li><a href="project.html#s6">1.6 Схемы сети L1, L2, L3</a></li><li><a href="project.html#s7">1.7 Фасад ТКШ</a></li><li><a href="project.html#s8">1.8 Планы зданий</a></li></ol></li><li><span class="toc-section-header">2 ЭКСПЛУАТАЦИОННАЯ ЧАСТЬ</span><ol class="sub-list"><li><a href="operation.html#e1">2.1 Таблица VLAN</a></li><li><a href="operation.html#e2">2.2 IP-адресация</a></li><li><a href="operation.html#e3">2.3 Назначение портов</a></li><li><a href="operation.html#e4">2.4 Конфигурация оборудования</a></li><li><a href="operation.html#e5">2.5 Настройка сервисов</a></li><li><a href="operation.html#e6">2.6 Команды проверки</a></li></ol></li><li><span class="toc-section-header">3 ЭКОНОМИЧЕСКАЯ ЧАСТЬ</span><ol class="sub-list"><li><a href="economy.html#e1">3.1 Сравнение поставщиков</a></li><li><a href="economy.html#e2">3.2 Выбор поставщиков</a></li><li><a href="economy.html#e3">3.3 Норма расхода</a></li><li><a href="economy.html#e4">3.4 Смета затрат</a></li><li><a href="economy.html#e5">3.5 Трудозатраты</a></li><li><a href="economy.html#e6">3.6 Итоговая смета</a></li><li><a href="economy.html#e7">3.7 Выводы</a></li></ol></li><li><span class="toc-section-header">4 ТЕХНОЛОГИИ ВЕБ</span><ol class="sub-list"><li><a href="technology.html#t1">4.1 Подготовительный этап</a></li><li><a href="technology.html#t2">4.2 Дизайн и цветовая схема</a></li><li><a href="technology.html#t3">4.3 Вёрстка сайта</a></li><li><a href="technology.html#t4">4.4 Структура файлов</a></li><li><a href="technology.html#t5">4.5 Публикация</a></li></ol></li><li><a href="conclusion.html">ЗАКЛЮЧЕНИЕ</a></li><li><a href="list.html">СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ</a></li><li><a href="application.html">ПРИЛОЖЕНИЯ</a></li><li><span class="toc-section-header">ПРИЛОЖЕНИЯ</span><ol class="sub-list"><li><a href="application1.html">Приложение А — Физ. схема сайта</a></li><li><a href="application2.html">Приложение Б — Цветовая схема</a></li><li><a href="application3.html">Приложение В — Кабельный журнал</a></li></ol></li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- ═══ ПРАВАЯ КОЛОНКА ═══ -->
+    <div class="main-content">
+
+        <!-- Шапка -->
+        <header class="site-header">
+            <div class="logo-container">
+                <img src="../картинки/лого.jpg" alt="Логотип" class="logo-img">
+            </div>
+            <div class="header-text">
+                <div class="header-college">ГБПОУ «Пермский политехнический колледж имени Н.Г. Славянова»</div>
+                <div class="header-pz-label">Пояснительная записка</div>
+                <div class="header-theme">ПРОЕКТИРОВАНИЕ УНИВЕРСАЛЬНОЙ СКС ДЛЯ ФИЛИАЛА ОФИСНОЙ ОРГАНИЗАЦИИ</div>
+            </div>
+        </header>
+
+        <!-- Контент -->
+        <div class="content-center">
+<div class="defense-page">
+<h1 class="defense-title">2 ЭКСПЛУАТАЦИОННАЯ ЧАСТЬ</h1>
+<p class="defense-subtitle">VLAN, IP-адресация, конфигурация, сервисы</p>
+<div class="defense-nums-row">
+<div class="defense-num"><span class="defense-num-val">5</span><span class="defense-num-label">VLAN</span></div>
+<div class="defense-num"><span class="defense-num-val">5</span><span class="defense-num-label">сетевых сервисов</span></div>
+<div class="defense-num"><span class="defense-num-val">L3</span><span class="defense-num-label">маршрутизация SVI</span></div>
+<div class="defense-num"><span class="defense-num-val">VPN</span><span class="defense-num-label">канал B1↔B2</span></div>
+</div>
+<div class="defense-card">
+<h3 class="defense-card-title">КОНФИГУРАЦИЯ ЯДРА СЕТИ</h3>
+<ul class="defense-list">
+<li>L3-коммутатор <code>SW-B1-CORE</code> — маршрутизация между VLAN через SVI</li>
+<li>SVI: <code>Vlan100 192.168.30.1/28</code>, <code>Vlan200 192.168.40.1/27</code></li>
+<li>SVI: <code>Vlan300 192.168.60.1/28</code>, <code>Vlan400 192.168.10.1/28</code>, <code>Vlan999 192.168.99.1/29</code></li>
+<li>Маршрут по умолчанию: <code>ip route 0.0.0.0 0.0.0.0 192.168.10.2</code> (к МЭ)</li>
+<li>Trunk-порты к коммутаторам доступа: VLAN 200,300,999</li>
+</ul>
+</div>
+<div class="defense-card">
+<h3 class="defense-card-title">МЕЖСЕТЕВОЙ ЭКРАН И DMZ</h3>
+<ul class="defense-list">
+<li>UserGate F100 — трёхзонная архитектура: <strong>WAN — DMZ — LAN</strong></li>
+<li>DMZ (VLAN 400, 192.168.10.0/28): публичные серверы — HTTP, FTP, VPN-сервер</li>
+<li>В Cisco PT: Cisco ASA 5505 с аналогичной конфигурацией зон</li>
+<li>ACL: запрет прямых соединений DMZ → LAN, разрешение Internet → DMZ</li>
+<li>VPN-туннель IPSec между UserGate (B1) и MikroTik (B2)</li>
+</ul>
+</div>
+<div class="defense-card">
+<h3 class="defense-card-title">СЕТЕВЫЕ СЕРВИСЫ</h3>
+<ul class="defense-list">
+<li><strong>DHCP</strong> — автовыдача IP для VLAN 200 (USERS) и VLAN 300 (CCTV)</li>
+<li><strong>DNS</strong> — разрешение внутренних доменных имён</li>
+<li><strong>HTTP</strong> — корпоративный веб-портал в DMZ</li>
+<li><strong>FTP</strong> — файловый обмен через DMZ</li>
+<li><strong>VPN IPSec</strong> — защищённый канал B1↔B2</li>
+</ul>
+</div>
+<div class="defense-card">
+<h3 class="defense-card-title">КОМАНДЫ ПРОВЕРКИ</h3>
+<ul class="defense-list">
+<li><code>show vlan brief</code> — список VLAN и портов</li>
+<li><code>show ip interface brief</code> — состояние SVI-интерфейсов</li>
+<li><code>show ip route</code> — таблица маршрутизации</li>
+<li><code>show mac address-table</code> — MAC-таблица</li>
+<li><code>show crypto isakmp sa</code> — состояние VPN-туннеля (ASA)</li>
+<li><code>ping 192.168.40.2 source vlan 100</code> — проверка связности</li>
+</ul>
+</div>
+</div>
+        </div>
+
+        <!-- Нижнее меню защиты ДП -->
+        <div class="bottom-defense">
+            <ul class="bottom-defense-menu">
+<li><a href="defense_intro.html">ВВЕДЕНИЕ</a></li>
+<li><a href="defense_project.html">1 ПРОЕКТНАЯ ЧАСТЬ</a></li>
+<li><a href="defense_operation.html" class="active">2 ЭКСПЛУАТАЦИОННАЯ ЧАСТЬ</a></li>
+<li><a href="defense_economy.html">3 ЭКОНОМИЧЕСКАЯ ЧАСТЬ</a></li>
+<li><a href="defense_technology.html">4 ТЕХНОЛОГИЯ ВЕБ</a></li>
+            </ul>
+        </div>
+
+        <!-- Подвал -->
+        <footer class="main-footer">
+            <div class="footer-content">
+                <p>Бахаревой Александры Валерьевны&nbsp;&nbsp;|&nbsp;&nbsp;09.02.06. Сетевое и системное администрирование</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
